@@ -18,6 +18,10 @@
         margin: 0 auto;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
+      .nome {
+        padding-inline: 20px;
+        padding-block: 5px;
+      }
       .card {
         padding: 0.5em 1.5em 1.5em 0.5em;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -73,6 +77,9 @@
         background-color: var(--skill-bar-color);
         border-radius: 0.375rem;
       }
+      ul{
+        padding-block: 5px;
+      }
       @media only screen and (max-width: 991px) {
         /* For mobile phones: */
         h2 {
@@ -106,7 +113,9 @@
         <div class="col-lg-4 col-12 my-2">
           <div class="card">
             <img class="mx-20 my-2" src="images/perfil.jpg" width="100%" />
-            <h3>João Víctor de Moraes Santos Gomes</h3>
+            <div class="nome">
+                <h3>João Víctor de Moraes Santos Gomes</h3>
+            </div>
 
             <hr />
 
@@ -199,15 +208,45 @@
               <h5>Analista de Dados Jr. | DDMX</h5>
               <i class="bi bi-calendar2-fill">
                 Dez/2021 -
-                <div class="atual">Atual</div></i
-              >
-              <p>Descrição do cargo</p>
+                <div class="atual">Atual</div>
+              </i>
+
+              <ul>
+                <li>
+                  <p>
+                    Análise de dados e suporte ao time de desenvolvimento
+                    backend.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Responsável pela análise de dados, principalmente utilizando Elasticsearch para aquisição de dados em tempo real;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Desenvolvimento de APIs REST utilizando Java e MongoDB como banco de dados para aplicações mobile.
+                  </p>
+                </li>
+              </ul>
 
               <hr />
 
               <h5>Estagiário em ciência dos Dados | DDMX</h5>
               <i class="bi bi-calendar2-check-fill"> Dez/2020 - Dez/2021</i>
-              <p>Descrição do cargo</p>
+              <ul>
+                <li>
+                  <p>
+                    Implementação de micro-serviço em servidores internos da
+                    empresa;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Conversão de código de Machine Learning em Python para Java.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
 
